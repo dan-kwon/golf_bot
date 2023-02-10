@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "golf-bot"
+version = "0.1.0"
+description = "Golf bot can help you golf more but cannot actually golf itself."
+authors = ["dan-kwon <danielkwon02@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "golf_bot"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+splinter = "^0.19.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
