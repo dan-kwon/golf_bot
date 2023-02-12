@@ -9,8 +9,12 @@ packages = [{include = "golf_bot"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-splinter = "^0.19.0"
+splinter = {extras = ["zope-testbrowser"], version = "^0.19.0"}
+flask = "^2.2.2"
 
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.21.1"
 
 [build-system]
 requires = ["poetry-core"]
